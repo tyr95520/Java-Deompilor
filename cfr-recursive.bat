@@ -1,8 +1,8 @@
 @echo off
 setlocal
 
-set CFR_PATH="C:\Users\Alex\Desktop\Java-Deompilor\cfr-0.152.jar"
-set FILE_DIR="C:\ConfluenceSrc\atlassian-confluence-7.13.6\confluence\WEB-INF"
+set CFR_PATH="PATH\of\cfr-0.152.jar"
+set FILE_DIR="PATH\of\compileFileDir"
 
 for /r %FILE_DIR% %%f in (*.class) do (
 	java -jar %CFR_PATH% "%%~ff" --outputdir "%%~dpf
